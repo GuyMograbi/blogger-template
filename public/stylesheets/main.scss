@@ -1,0 +1,45 @@
+body{
+
+    background:url('/public/images/background.png') no-repeat fixed top center;
+    background-size:100%;
+
+    padding:0;
+    margin:0;
+
+    .breakline
+    {
+        height: 150px;
+        padding:10px;
+    }
+
+    .tile{
+        &:hover {opacity:0.9;}
+        float:left;
+        margin:10px;
+        color:white;
+        font-family:arial;
+        background:#D0284C;
+        width:500px;    height:150px;
+        &.wide { width: 1000px; }
+        &.small { width: 240px; }
+        &.tall { height: 300px; }
+        img { height:100%; width:100%; margin:0;}
+        div {
+            font-size: 14px
+        }
+        a {
+            color: white;
+            text-decoration:none;
+            font-style:none;
+        }
+
+        .content{
+            opacity:1;
+
+            padding:30px;
+        }
+
+    }
+
+}
+
