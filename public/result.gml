@@ -486,54 +486,75 @@ body#layout #sidebar {
 ]]></b:skin>
   </head>
 
-  <body>
-  <b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'>
+<body>
+  <!--<b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'>
 <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar'/>
-</b:section>
+</b:section> -->
 
-  <div id='outer-wrapper'><div id='wrap2'>
+    <div id='outer-wrapper'>
+        <div id='wrap2'>
 
-    <!-- skip links for text browsers -->
-    <span id='skiplinks' style='display:none;'>
-      <a href='#main'>skip to main </a> |
-      <a href='#sidebar'>skip to sidebar</a>
-    </span>
+            <!-- skip links for text browsers -->
+            <span id='skiplinks' style='display:none;'>
+                <a href='#main'>skip to main </a> |
+                <a href='#sidebar'>skip to sidebar</a>
+            </span>
 
-    <div id='header-wrapper'>
-      <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
-<b:widget id='Header1' locked='true' title='Moogies - Mogi&apos;s Movies Blog (Header)' type='Header'/>
-</b:section>
-    </div>
+            <div id='header-wrapper'>
+                <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
+                    <b:widget id='Header1' locked='true' title='Moogies - Mogi&apos;s Movies Blog (Header)' type='Header'/>
+                </b:section>
+            </div>
 
-    <div id='content-wrapper'>
 
-      <div id='crosscol-wrapper' style='text-align:center'>
-        <b:section class='crosscol' id='crosscol'/>
-      </div>
+            <b:if cond='data:blog.pageType != "item"'>
+                <div class="tile normal">
+                    <div class="content">
+                        <div class="sprite tile-symbol img-archive"></div>
+                        <div class=""><a href="#">Browse Archive</a></div>
+                    </div>
+                </div>
+                <div class="breakline"></div>
+                <div class="tile small tall">
+                    <img src="/public/images/profile.jpg"/>
+                </div>
 
-      <div id='main-wrapper'>
-        <b:section class='main' id='main' showaddelement='no'>
-<b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
-<b:widget id='Followers1' locked='false' title='Followers' type='Followers'/>
-<b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'/>
-<b:widget id='Profile1' locked='false' title='About Me' type='Profile'/>
-</b:section>
-      </div>
+                <div class="tile small">
+                    <div class="content">This is me.</div>
+                </div>
+            <b:else/>
 
-      <div id='sidebar-wrapper'>
-        <b:section class='sidebar' id='sidebar' preferred='yes'/>
-      </div>
 
-      <!-- spacer for skins that want sidebar and main to be the same height-->
-      <div class='clear'>&#160;</div>
+                <div id='content-wrapper'>
 
-    </div> <!-- end content-wrapper -->
+                        <div id='crosscol-wrapper' style='text-align:center'>
+                            <b:section class='crosscol' id='crosscol'/>
+                        </div>
 
-    <div id='footer-wrapper'>
-      <b:section class='footer' id='footer'/>
-    </div>
+                        <div id='main-wrapper'>
+                        <b:section class='main' id='main' showaddelement='no'>
+                            <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
+                            <b:widget id='Followers1' locked='false' title='Followers' type='Followers'/>
+                            <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'/>
+                            <b:widget id='Profile1' locked='false' title='About Me' type='Profile'/>
+                        </b:section>
+                    </div>
+                    <div id='sidebar-wrapper'>
+                        <b:section class='sidebar' id='sidebar' preferred='yes'/>
+                    </div>
+                    <!-- spacer for skins that want sidebar and main to be the same height-->
+                    <div class='clear'>&#160;</div>
+                </div>
+                <!-- end content-wrapper -->
+                <div id='footer-wrapper'>
+                    <b:section class='footer' id='footer'/>
+                </div>
+            </b:if>
+        </div>
+    </div><!-- end outer-wrapper -->
 
-  </div></div> <!-- end outer-wrapper -->
-  <b:include data='blog' name='google-analytics'/>
+
+<b:include data='blog' name='google-analytics'/>
+
 </body>
 </html>
