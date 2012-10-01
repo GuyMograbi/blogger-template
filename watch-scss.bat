@@ -1,0 +1,1 @@
+sass --watch public/stylesheets/main.scss:public/stylesheets/main.css --style compact
