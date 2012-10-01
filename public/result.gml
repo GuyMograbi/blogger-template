@@ -484,6 +484,10 @@ body#layout #sidebar {
   padding: 0;
 }
 ]]></b:skin>
+
+
+  <link type="text/css" rel="stylesheet" href="https://raw.github.com/GuyMograbi/blogger-template/master/public/stylesheets/main.css"/>
+
   </head>
 
 <body>

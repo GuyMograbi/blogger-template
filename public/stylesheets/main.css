@@ -1,4 +1,4 @@
-body { background: url("/public/images/background.png") no-repeat fixed top center; background-size: 100%; padding: 0; margin: 0; }
+body { background: url("https://raw.github.com/GuyMograbi/blogger-template/master/public/images/background.png") no-repeat fixed top center; background-size: 100%; padding: 0; margin: 0; }
 body .breakline { height: 150px; padding: 10px; }
 body .tile { float: left; margin: 10px; color: white; font-family: arial; background: #D0284C; width: 500px; height: 150px; }
 body .tile:hover { opacity: 0.9; }
