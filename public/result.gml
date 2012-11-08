@@ -483,10 +483,27 @@ body#layout #main,
 body#layout #sidebar {
   padding: 0;
 }
+
+
+/*********************************** guy's CSS from project **********************************/
+body { background: url("https://raw.github.com/GuyMograbi/blogger-template/master/public/images/background.png") no-repeat fixed top center; background-size: 100%; padding: 0; margin: 0; }
+body .breakline { height: 150px; padding: 10px; }
+body .tile { float: left; margin: 10px; color: white; font-family: arial; background: #D0284C; width: 500px; height: 150px; }
+body .tile:hover { opacity: 0.9; }
+body .tile.center { display: table; }
+body .tile.center .content { display: table-cell; vertical-align: middle; text-align: center; }
+body .tile.wide { width: 1000px; }
+body .tile.small { width: 240px; }
+body .tile.tall { height: 300px; }
+body .tile img { height: 100%; width: 100%; margin: 0; }
+body .tile div { font-size: 14px; }
+body .tile a { color: white; text-decoration: none; font-style: none; }
+body .tile .content { opacity: 1; padding: 30px; }
+
 ]]></b:skin>
 
 
-  <link type="text/css" rel="stylesheet" href="https://raw.github.com/GuyMograbi/blogger-template/master/public/stylesheets/main.css"/>
+
 
   </head>
 
@@ -512,15 +529,21 @@ body#layout #sidebar {
 
 
             <b:if cond='data:blog.pageType != "item"'>
-                <div class="tile normal">
+                <div class="tile small center">
+                    <div class="title">
+                        Latest Posts
+                    </div>
                     <div class="content">
                         <div class="sprite tile-symbol img-archive"></div>
+                        <div class=""><a href="#">Browse Archive</a></div>
+                        <div class=""><a href="#">Browse Archive</a></div>
+                        <div class=""><a href="#">Browse Archive</a></div>
                         <div class=""><a href="#">Browse Archive</a></div>
                     </div>
                 </div>
                 <div class="breakline"></div>
                 <div class="tile small tall">
-                    <img src="/public/images/profile.jpg"/>
+                    <img src="https://raw.github.com/GuyMograbi/blogger-template/master/public/images/profile.jpg"/>
                 </div>
 
                 <div class="tile small">

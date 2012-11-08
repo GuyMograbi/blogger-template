@@ -15,6 +15,25 @@ body{
 
     .tile{
         &:hover {opacity:0.9;}
+
+        &.center {
+
+            .content{
+                margin-top:35px;
+                text-align: center;
+          }
+          .title{
+
+            text-align:center;
+            font-size:25px;
+            margin-top:10px;
+            .content{
+                margin-top:10px;
+                padding:0;
+            }
+
+          }
+        }
         float:left;
         margin:10px;
         color:white;
@@ -35,8 +54,8 @@ body{
         }
 
         .content{
-            opacity:1;
 
+            opacity:1;
             padding:30px;
         }
 
